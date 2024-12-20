@@ -3,7 +3,7 @@ import ThemeToggle from './ThemeToggle';
 import { data } from '../data/profile_data';
 
 const Navbar = () => {
-  const navItems = ['About', 'Experience', 'Skills', 'Projects', 'Contact'];
+  const navItems = ['About', 'Education', 'Skills', 'Projects', 'Contact'];
 
   return (
     <motion.nav 
@@ -19,9 +19,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
           >
             <h1 className="text-2xl font-bold playfair">
-              <span className="text-transparent bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text">Madhu</span>
+              <span className="text-transparent bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text">{data.navbar.fist_name}</span>
               {' '}
-              <span className="text-transparent bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text">Kinnera</span>
+              <span className="text-transparent bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text">{data.navbar.last_name}</span>
             </h1>
           </motion.div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">

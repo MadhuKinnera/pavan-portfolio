@@ -5,10 +5,10 @@ import instagramIcon from '../assets/instagram.png';
 import { data } from '../data/profile_data';
 
 const Contact = () => {
-  const linkedInUrl = data?.contact?.linked_in_url;
-  const emailId = data?.contact?.email_id;
-  const githubUrl=data?.contact?.github_url;
-  const instagramUrl=data?.contact?.instagram_url ;
+  const linkedInUrl = data?.contact?.linkedin;
+  const emailId = data?.contact?.email;
+  const githubUrl=data?.contact?.github;
+  const instagramUrl=data?.contact?.instagram ;
   return (
     <section id="contact" className="py-20 transition-colors duration-200 bg-gray-50 dark:bg-gray-800">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

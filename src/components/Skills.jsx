@@ -22,7 +22,7 @@ const SkillCategory = ({ title, skills }) => (
 
 const Skills = () => {
   const skillCategories = data?.skillCategories;
-
+ if(!skillCategories) return;
   return (
     <section id="skills" className="py-20 transition-colors duration-200 bg-gray-50 dark:bg-gray-800">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">

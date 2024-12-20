@@ -16,16 +16,17 @@ const Experience = () => {
   const experiences = data?.experiences;
   const education = data?.education;
 
+
   return (
-    <section id="experience" className="py-20 transition-colors duration-200 bg-white dark:bg-gray-900">
+    <section id="education" className="py-20 transition-colors duration-200 bg-white dark:bg-gray-900">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-3xl font-bold text-center text-gray-900 dark:text-white">Experience</h2>
+        <h2 className="mb-12 text-3xl font-bold text-center text-gray-900 dark:text-white"></h2>
         <div className="max-w-3xl mx-auto">
-          {experiences.map((exp, index) => (
+          {experiences && experiences.map((exp, index) => (
             <TimelineItem key={index} {...exp} />
           ))}
           <h3 className="mt-12 mb-6 text-2xl font-bold text-gray-900 dark:text-white">Education</h3>
-          {education.map((edu, index) => (
+          {education && education.map((edu, index) => (
             <TimelineItem key={index} {...edu} />
           ))}
         </div>
